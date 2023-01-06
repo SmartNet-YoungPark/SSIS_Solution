@@ -1,0 +1,25 @@
+USE [Movies]
+GO
+
+/****** Object:  Table [dbo].[Items]    Script Date: 12/27/2022 9:10:22 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Items](
+	[item_id] [numeric](12, 0) IDENTITY(1,1) NOT NULL,
+	[UPC] [varchar](50) NOT NULL,
+	[Name] [varchar](80) NOT NULL,
+	[Price] [decimal](19, 2) NOT NULL,
+	[cost] [decimal](18, 2) NULL,
+	[BD] [decimal](5, 2) NULL,
+	[TAX] [bit] NULL,
+	[Category] [char](50) NOT NULL,
+	[Regdate] [datetime] NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Items] ADD  CONSTRAINT [DF_Items_cost]  DEFAULT ((0)) FOR [cost]
+GO

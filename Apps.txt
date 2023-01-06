@@ -1,0 +1,7 @@
+Movie | 1 | There is the best movie in downtown.
+Books | 2 | There is the best book shop in downtown.
+Magazine | 3 | There is the best book shop in downtown.
+Sushi Store | 1 | There is the best restaurant in downtown.
+SportsCenter | 5 | We have mall in downtown.
+Swimming pool | 5 | YMCA is located in Uptown
+

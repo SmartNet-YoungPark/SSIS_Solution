@@ -1,0 +1,2135 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/31/2022 3:03:26 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-GO18V3M"
+  DTS:CreatorName="DESKTOP-GO18V3M\yjpark"
+  DTS:DTSID="{4B2E964F-FCCE-4B70-A8EB-4EE2CE972C96}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.845.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{F77B38AA-58D6-4497-A777-88B06B7665F4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A2EEFB59-4463-4BC7-A21D-CBC8EDD61015}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Deveopments\SSIS\SSIS_Solution\Contestant.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{CF1629EF-9638-43DA-814E-BAB501E69BFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{F1406C8E-EE4D-4C74-B41E-94E87FC8BD9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{66A193F7-4417-41CC-AA32-7BAD266DD917}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{59307818-D543-4B95-999C-C341A864A20B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BB1C8442-125D-47A0-B1C5-BF1B9CE439E8}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Deveopments\SSIS\SSIS_Solution\Contestant.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ContestantName"
+              DTS:DTSID="{E670C564-8BC7-4D3F-9312-B14199CA4B5E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="19"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SeriesNumber"
+              DTS:DTSID="{8D5587A8-F090-43CB-8A57-21E3C78552AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="19"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Position"
+              DTS:DTSID="{2FF42B05-9C62-41EB-8AA6-A152364DBC6F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MentorName"
+              DTS:DTSID="{289D0179-36A8-4133-96A5-2A9E7DC3C1DC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import doggy data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{484E0524-ECA9-43BE-ABCF-DE1C855218A9}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import doggy data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import doggy data\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import doggy data\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import doggy data\Conditional Split.Inputs[Conditional Split Input].Columns[IfGood]"
+                      cachedDataType="bool"
+                      cachedName="IfGood"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[IfGood]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import doggy data\Conditional Split.Outputs[Good Output]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Good Output"
+                  synchronousInputId="Package\Import doggy data\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[IfGood]} ==  TRUE </property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">IfGood ==  TRUE </property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import doggy data\Conditional Split.Outputs[Bad Output]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Bad Output"
+                  synchronousInputId="Package\Import doggy data\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[IfGood]} ==  FALSE </property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">IfGood ==  FALSE </property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import doggy data\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Import doggy data\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import doggy data\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Import doggy data\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import doggy data\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import doggy data\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import doggy data\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import doggy data\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import doggy data\Dodgy Data Read"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Dodgy Data Read"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import doggy data\Dodgy Data Read.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[SeriesNumber]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].ExternalColumns[SeriesNumber]"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[SeriesNumber]"
+                      name="SeriesNumber"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[Position]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].ExternalColumns[Position]"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[Position]"
+                      name="Position"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[MentorName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].ExternalColumns[MentorName]"
+                      length="50"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[MentorName]"
+                      name="MentorName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[ContestantName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].ExternalColumns[ContestantName]"
+                      length="50"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[ContestantName]"
+                      name="ContestantName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].ExternalColumns[ContestantName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ContestantName" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].ExternalColumns[SeriesNumber]"
+                      dataType="ui4"
+                      name="SeriesNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].ExternalColumns[Position]"
+                      dataType="ui4"
+                      name="Position" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].ExternalColumns[MentorName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MentorName" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import doggy data\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[tblGoodContestant]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import doggy data\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{9BEA2CE6-9D48-45D7-AD5E-BBFA6131D827}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-GO18V3M_MSSQLINSTANCE002.Movies]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ContestantName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ContestantName"
+                      externalMetadataColumnId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ContestantName]"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[ContestantName]"
+                      name="ContestantName" />
+                    <inputColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[intPosition]"
+                      cachedDataType="ui4"
+                      cachedName="intPosition"
+                      externalMetadataColumnId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Position]"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[intPosition]" />
+                    <inputColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[intSeries]"
+                      cachedDataType="ui4"
+                      cachedName="intSeries"
+                      externalMetadataColumnId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SeriesNumber]"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[intSeries]" />
+                    <inputColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MentorName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MentorName"
+                      externalMetadataColumnId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mentor]"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[MentorName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ContestantName]"
+                      dataType="wstr"
+                      length="255"
+                      name="ContestantName" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SeriesNumber]"
+                      dataType="i4"
+                      name="SeriesNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Position]"
+                      dataType="i4"
+                      name="Position" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mentor]"
+                      dataType="wstr"
+                      length="255"
+                      name="Mentor" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import doggy data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import doggy data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import doggy data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import doggy data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import doggy data\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[tblBadContestant]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import doggy data\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="{9BEA2CE6-9D48-45D7-AD5E-BBFA6131D827}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-GO18V3M_MSSQLINSTANCE002.Movies]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ContestantName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ContestantName"
+                      externalMetadataColumnId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ContestantName]"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[ContestantName]" />
+                    <inputColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Problem]"
+                      cachedDataType="nText"
+                      cachedName="Problem"
+                      externalMetadataColumnId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Problem]"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[Problem]" />
+                    <inputColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[intSeries]"
+                      cachedDataType="ui4"
+                      cachedName="intSeries"
+                      externalMetadataColumnId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SeriesNumber]"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[intSeries]" />
+                    <inputColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[intPosition]"
+                      cachedDataType="ui4"
+                      cachedName="intPosition"
+                      externalMetadataColumnId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Position]"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[intPosition]" />
+                    <inputColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MentorName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MentorName"
+                      externalMetadataColumnId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Mentor]"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[MentorName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ContestantName]"
+                      dataType="wstr"
+                      length="255"
+                      name="ContestantName" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SeriesNumber]"
+                      dataType="i4"
+                      name="SeriesNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Position]"
+                      dataType="i4"
+                      name="Position" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Mentor]"
+                      dataType="wstr"
+                      length="255"
+                      name="Mentor" />
+                    <externalMetadataColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Problem]"
+                      dataType="nText"
+                      name="Problem" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import doggy data\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import doggy data\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import doggy data\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import doggy data\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import doggy data\Validate Data"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;12"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Validate Data"
+              version="12">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+
+        if (Row.ContestantName_IsNull ||
+            Row.Position_IsNull ||
+            Row.SeriesNumber_IsNull || Row.MentorName_IsNull )
+        {
+            Row.Problem = " At least one column is not filled in";
+            Row.IfGood = false;
+            return;
+        }
+
+        //Try to convert series / position numbers to  integers
+        uint s = 0;
+        uint p = 0;
+
+        try
+        {
+            s = Convert.ToUInt32(Row.SeriesNumber);
+        }
+        catch
+        {
+            s = 0;
+        }
+        try
+        {
+            p = Convert.ToUInt32(Row.Position);
+        }
+        catch
+        {
+            p = 0;
+        }
+        if(s==0 || p == 0)
+        {
+            Row.Problem = "The series and position numbers aren't both integers.";
+            Row.IfGood = false;
+            return;
+        }
+
+        Row.intSeries = s;
+        Row.intPosition = p;
+        Row.MentorName = Row.MentorName.Trim();
+        Row.ContestantName = Row.ContestantName.Trim();
+        Row.Problem = "";
+        Row.IfGood = true;
+
+
+
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_e42325bd456c416b9e6a94cf5c2eb731.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d40096a1-a14a-4ce8-91a7-96539c0ed90c}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_e42325bd456c416b9e6a94cf5c2eb731</RootNamespace>
+    <AssemblyName>SC_e42325bd456c416b9e6a94cf5c2eb731</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_e42325bd456c416b9e6a94cf5c2eb731" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String ContestantName
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool ContestantName_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public UInt32 SeriesNumber
+    {
+        get
+        {
+            return Buffer.GetUInt32(BufferColumnIndexes[1]);
+        }
+    }
+    public bool SeriesNumber_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+    }
+
+    public UInt32 Position
+    {
+        get
+        {
+            return Buffer.GetUInt32(BufferColumnIndexes[2]);
+        }
+    }
+    public bool Position_IsNull
+    {
+        get
+        {
+            return IsNull(2);
+        }
+    }
+
+    public String MentorName
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[3]);
+        }
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool MentorName_IsNull
+    {
+        get
+        {
+            return IsNull(3);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public UInt32 intSeries
+    {
+        set
+        {
+            this[4] = value;
+        }
+    }
+    public bool intSeries_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(4);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public UInt32 intPosition
+    {
+        set
+        {
+            this[5] = value;
+        }
+    }
+    public bool intPosition_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(5);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Problem
+    {
+        set
+        {
+            this[6] = value;
+        }
+    }
+    public bool Problem_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(6);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Boolean IfGood
+    {
+        set
+        {
+            this[7] = value;
+        }
+    }
+    public bool IfGood_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(7);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_e42325bd456c416b9e6a94cf5c2eb731.Properties.Settings.get_Default():SC_e42325bd456c416b9e6a94cf5c2eb731.Properties.Sett" +
+    "ings")]
+
+namespace SC_e42325bd456c416b9e6a94cf5c2eb731.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_e42325bd456c416b9e6a94cf5c2eb731</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_e42325bd456c416b9e6a94cf5c2eb731</msb:DisplayName>
+    <msb:ProjectId>{2E89794D-9AC3-47AC-A449-AB33824EC460}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_e42325bd456c416b9e6a94cf5c2eb731.csproj" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_e42325bd456c416b9e6a94cf5c2eb731")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_e42325bd456c416b9e6a94cf5c2eb731")]
+[assembly: AssemblyCopyright("Copyright @  2022")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_e42325bd456c416b9e6a94cf5c2eb731.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_e42325bd456c416b9e6a94cf5c2eb731.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_e42325bd456c416b9e6a94cf5c2eb731.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_e42325bd456c416b9e6a94cf5c2eb731.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_e42325bd456c416b9e6a94cf5c2eb731.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_e42325bd456c416b9e6a94cf5c2eb731.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAGOgsGMAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAARjcA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAPQ2AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAATBcAAAAgAAAAGAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAaAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAIAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAo
+NwAAAAAAAEgAAAACAAUAfCMAAMASAAABAAAAAAAAADw2AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswAgC6AAAAAQAAEQNvBgAABi0YA28LAAAGLRADbwkAAAYt
+CANvDgAABiwTA3IBAABwbxQAAAYDFm8WAAAGKhYKFgsDbwgAAAYoEAAACgreBSYWCt4AAANvCgAA
+BigQAAAKC94FJhYL3gAGLAMHLRMDck0AAHBvFAAABgMWbxYAAAYqAwZvEAAABgMHbxIAAAYDA28M
+AAAGbxEAAApvDQAABgMDbwQAAAZvEQAACm8FAAAGA3K5AABwbxQAAAYDF28WAAAGKgAAARwAAAAA
+NwAORQAFDgAAAQAASwAOWQAFDgAAAR4CKBoAAAYqKgIDBAUoEgAACipSAnsTAAAKAnsUAAAKFpRv
+FQAACiomAhYDKBYAAAoqIgIWKBcAAAoqWgMsCAIWKBgAAAoqcrsAAHBzGQAACnpSAnsTAAAKAnsU
+AAAKF5RvGgAACioiAhcoFwAACipSAnsTAAAKAnsUAAAKGJRvGgAACioiAhgoFwAACipSAnsTAAAK
+AnsUAAAKGZRvFQAACiomAhkDKBYAAAoqIgIZKBcAAAoqWgMsCAIZKBgAAAoqcrsAAHBzGQAACno6
+AhoDjB0AAAEoFgAACipaAywIAhooGAAACipyuwAAcHMZAAAKejoCGwOMHQAAASgWAAAKKloDLAgC
+GygYAAAKKnK7AABwcxkAAAp6JgIcAygWAAAKKloDLAgCHCgYAAAKKnK7AABwcxkAAAp6OgIdA4we
+AAABKBYAAAoqWgMsCAIdKBgAAAoqcrsAAHBzGQAACnoeAigbAAAKKh4CKBwAAAoqfgIoHQAACgIC
+cx4AAAZ9AQAABAICcx8AAAZ9AgAABCqSBHJYAQBwGm8eAAAKLBUCBQIDKB8AAAoOBHMDAAAGbxwA
+AAYqSisHAgNvHQAABgNvGAAABi3xKgYqOgIoIAAACgIDfQMAAAQqOgIoIAAACgIDfQQAAAQqHgIo
+IAAACiqufgUAAAQtHnJoAQBw0AcAAAIoIQAACm8iAAAKcyMAAAqABQAABH4FAAAEKhp+BgAABCoe
+AoAGAAAEKhp+BwAABCoeAigkAAAKKi5zJQAABoAHAAAEKgAAQlNKQgEAAQAAAAAADAAAAHY0LjAu
+MzAzMTkAAAAABQBsAAAALAcAACN+AACYBwAAfAcAACNTdHJpbmdzAAAAABQPAADcAQAAI1VTAPAQ
+AAAQAAAAI0dVSUQAAAAAEQAAwAEAACNCbG9iAAAAAAAAAAIAAAFXFaIBCQEAAAD6ATMAFgAAAQAA
+ACIAAAAIAAAABwAAACYAAAAZAAAAJAAAABAAAAABAAAAAwAAABMAAAAYAAAAAQAAAAQAAAABAAAA
+AAA4AwEAAAAAAAYARgKbBQYA2gKbBQYAkgGIBQ8ADwYAAAYAvwGvBAYAKQKvBAYACgKvBAYAwQKv
+BAYAZgKvBAYAfwKvBAYA1gGvBAYA8QH+AgoAmgLfAAYApgZaBAoAWgXfAA4ASwXfAAoAFQXfAAoA
+4wbfAAYAdQGIBQYAawW7BQYACQWaBBIARQEiAxIApgEiAxIALQGFBAYAWgGbBQYAEAdaBAYAGwNa
+BAYA3gRaBAYAMQBaBAYAcgRaBAYA+ARaBAYAAAFaBAYAbQBaBAYAcAevBAAAAAA4AAAAAAABAAEA
+AQAQAHoEAAAQAAEAAQABABAAPgUAAD0AAQADAAEAEADFBgAASQABABoAAQAQAJoGAAA5AAMAHgAB
+ABAAWwYAADkABAAfAAAAEADCBSwGOQAFACAAAAEQAIoGLAZhAAcAJAAGAJoGigAGAFsGjgABANMG
+kgABANMGkgARAGYElgARAB0BmgARAF0AngBQIAAAAADGAE0HogABADQhAAAAAIYYewUGAAIAPCEA
+AAAAhhh7BSkAAgBHIQAAAACGCK8AJQAFAFwhAAAAAIYIwgAQAAUAZiEAAAAAhgieA1AABgBvIQAA
+AACGCLgDqAAGAIYhAAAAAIYILQWtAAcAmyEAAAAAhggQBFAABwCkIQAAAACGCMEErQAHALkhAAAA
+AIYI5QNQAAcAwiEAAAAAhgiRACUABwDXIQAAAACGCKAAEAAHAOEhAAAAAIYIcgNQAAgA6iEAAAAA
+hgiIA6gACAABIgAAAACGCB4GsQAJABAiAAAAAIYIKASoAAoAJyIAAAAAhgjOBLEACwA2IgAAAACG
+CPkDqAAMAE0iAAAAAIYIRQQQAA0AVyIAAAAAhgjSA6gADgBuIgAAAACGCFIAqAAPAH0iAAAAAIYI
+YAOoABAAlCIAAAAAhgBkB1AAEQCcIgAAAACGAK0GUAARAKQiAAAAAIYYewUGABEAxCIAAAAAxgBA
+B7YAEQDpIgAAAADGATkHogAVAPwiAAAAAMYBTQeiABYA/iIAAAAAhhh7BcAAFwANIwAAAACGGHsF
+wAAYABwjAAAAAIMYewUGABkAJCMAAAAAkwhnBcYAGQBQIwAAAACTCAUBywAZAFcjAAAAAJMIEQHQ
+ABkAXyMAAAAAlgi5BtYAGgBmIwAAAACGGHsFBgAaAG4jAAAAAJEYgQXbABoAAAABAGgHAAABAGAF
+AAACAGUGAAADACMFAAABAPgCAAABAPgCAAABAPgCAAABAPgCAAABAPgCAAABAPgCAAABAPgCAAAB
+APgCAAABAPgCAAABAPgCAAABAPgCAAABAPgCAAABAEEAAAACANUAAAADAGAFAAAEACMFAAABAGAF
+AAABAGgHAAABAOkGAAABAOkGAAABAPgCCQB7BQEAEQB7BQYAGQB7BQoAKQB7BRAAMQB7BRAAOQB7
+BRAAQQB7BRAASQB7BRAAUQB7BRAAWQB7BRAAYQB7BRAAaQB7BQYAmQB7BQYAuQB7BRUAyQB7BQYA
+0QAlACAA2QBhBCUAeQB7BSkAeQBgBTMAeQBlBjcAgQAYAzsAeQBRBEAAeQA2BEYAeQA9BAEA4QB7
+BRAAgQAuAEsAeQBkB1AAeQCtBlAAkQB7BQYA2QCTBlQAkQB5BlsAcQB7BQYAAQF/AGEAAQFsB2oA
+oQB7BXAAwQB7BQYALgALAPoALgATAAMBLgAbACIBLgAjACsBLgArAFQBLgAzAFQBLgA7AFQBLgBD
+ACsBLgBLAFoBLgBTAFQBLgBbAHEBQwBjALsB4QB7ALsB4wBrALsBKQJzACIBSQJzACIBGwADAAEA
+BwARAAgAEwAAAMYA3wAAALwD4wAAADEF5wAAABQE4wAAANUE5wAAAAAE4wAAAKQA3wAAAIwD4wAA
+ACIG5wAAACwE4wAAANIE5wAAAP0D4wAAAEkE3wAAANYD4wAAAFYA4wAAAGQD4wAAAGsF6wAAACUB
+8AAAAL0G9QACAAQAAwABAAUAAwACAAYABQABAAcABQACAAgABwACAAkACQACAAoACwACAAsADQAC
+AAwADwABAA0ADwACAA4AEQABAA8AEQABABAAEwABABEAFQABABIAFwABABMAGQABABQAGwABABUA
+HQABABYAHwABABcAIQACACEAIwACACIAJQABACMAJQACACQAJwAEgAAAAQAAAAAAAAAAAAAAAAAB
+AAAABAAAAAAAAAAAAAAAeABJAAAAAAAPAAAAAAAAAAAAAACBAPMGAAAAAA8AAAAAAAAAAAAAAIEA
+GAcAAAAABAAAAAAAAAAAAAAAeABaBAAAAAAAAAAAAQAAAMwFAAAAAAAAAFNDX2U0MjMyNWJkNDU2
+YzQxNmI5ZTZhOTRjZjVjMmViNzMxAFRvVUludDMyAEdldFVJbnQzMgA8TW9kdWxlPgBJbnB1dElE
+AG1zY29ybGliAHNldF9JZkdvb2QAZGVmYXVsdEluc3RhbmNlAFJ1bnRpbWVUeXBlSGFuZGxlAEdl
+dFR5cGVGcm9tSGFuZGxlAGdldF9NZW50b3JOYW1lAHNldF9NZW50b3JOYW1lAGdldF9Db250ZXN0
+YW50TmFtZQBzZXRfQ29udGVzdGFudE5hbWUASW5wdXROYW1lAE1pY3Jvc29mdC5TcWxTZXJ2ZXIu
+RHRzLlBpcGVsaW5lAFR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJl
+AEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2Vu
+ZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0
+dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBB
+c3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1i
+bHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29t
+cGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNz
+ZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRBdHRy
+aWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmli
+dXRlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAR2V0U3RyaW5nAFN5c3RlbS5Db21w
+b25lbnRNb2RlbABTQ19lNDIzMjViZDQ1NmM0MTZiOWU2YTk0Y2Y1YzJlYjczMS5kbGwAc2V0X0lm
+R29vZF9Jc051bGwAZ2V0X01lbnRvck5hbWVfSXNOdWxsAHNldF9NZW50b3JOYW1lX0lzTnVsbABn
+ZXRfQ29udGVzdGFudE5hbWVfSXNOdWxsAHNldF9Db250ZXN0YW50TmFtZV9Jc051bGwAc2V0X1By
+b2JsZW1fSXNOdWxsAGdldF9Qb3NpdGlvbl9Jc051bGwAc2V0X2ludFBvc2l0aW9uX0lzTnVsbABn
+ZXRfU2VyaWVzTnVtYmVyX0lzTnVsbABzZXRfaW50U2VyaWVzX0lzTnVsbABTZXROdWxsAHNldF9Q
+cm9ibGVtAHNldF9JdGVtAFN5c3RlbQBUcmltAHJlc291cmNlTWFuAEJvb2xlYW4AU2NyaXB0TWFp
+bgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVj
+dGlvbgBnZXRfUG9zaXRpb24Ac2V0X2ludFBvc2l0aW9uAEludmFsaWRPcGVyYXRpb25FeGNlcHRp
+b24AU3RyaW5nQ29tcGFyaXNvbgBDdWx0dXJlSW5mbwBPdXRwdXROYW1lTWFwAE91dHB1dE1hcABn
+ZXRfU2VyaWVzTnVtYmVyAElucHV0MEJ1ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZmZXIA
+Z2V0X1Jlc291cmNlTWFuYWdlcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3Rl
+bS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ19lNDIzMjViZDQ1
+NmM0MTZiOWU2YTk0Y2Y1YzJlYjczMS5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVi
+dWdnaW5nTW9kZXMAc2V0X2ludFNlcmllcwBTQ19lNDIzMjViZDQ1NmM0MTZiOWU2YTk0Y2Y1YzJl
+YjczMS5Qcm9wZXJ0aWVzAFZhcmlhYmxlcwBCdWZmZXJDb2x1bW5JbmRleGVzAEdldENvbHVtbklu
+ZGV4ZXMAU2V0dGluZ3MARXF1YWxzAENvbm5lY3Rpb25zAE9iamVjdABFbmRPZlJvd3NldABnZXRf
+RGVmYXVsdABVc2VyQ29tcG9uZW50AFBhcmVudENvbXBvbmVudABTY3JpcHRDb21wb25lbnQATWlj
+cm9zb2Z0LlNxbFNlcnZlci5UeFNjcmlwdABDb252ZXJ0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlw
+ZWxpbmVIb3N0AElucHV0MF9Qcm9jZXNzSW5wdXQASW5wdXQwX1Byb2Nlc3NJbnB1dFJvdwBOZXh0
+Um93AGdldF9Bc3NlbWJseQAAAAAASyAAQQB0ACAAbABlAGEAcwB0ACAAbwBuAGUAIABjAG8AbAB1
+AG0AbgAgAGkAcwAgAG4AbwB0ACAAZgBpAGwAbABlAGQAIABpAG4AAGtUAGgAZQAgAHMAZQByAGkA
+ZQBzACAAYQBuAGQAIABwAG8AcwBpAHQAaQBvAG4AIABuAHUAbQBiAGUAcgBzACAAYQByAGUAbgAn
+AHQAIABiAG8AdABoACAAaQBuAHQAZQBnAGUAcgBzAC4AAQEAgJtJAHMATgB1AGwAbAAgAHAAcgBv
+AHAAZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8AIABGAGEAbABzAGUA
+LgAgAEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABlACAAYwBvAGwAdQBt
+AG4AIABpAG4AcwB0AGUAYQBkAC4AAA9JAG4AcAB1AHQAIAAwAABxUwBDAF8AZQA0ADIAMwAyADUA
+YgBkADQANQA2AGMANAAxADYAYgA5AGUANgBhADkANABjAGYANQBjADIAZQBiADcAMwAxAC4AUABy
+AG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAACXkqDGcU3BCq9B32pz6kkEA
+BCABAQgDIAABBSABARERBCABAQ4FIAEBEVkEBwIJCQQAAQkJAyAADgkgAwESQR0IEkUDBhJBAwYd
+CAQgAQ4IBSACAQgcBCABAggEIAEJCAMgAAIGIAICDhF9BSABHQgICAABEoCBEYCFBSAAEoCJByAC
+AQ4SgIkIt3pcVhk04IkIiYRdzYCAzJEDBhIUAwYSGAMGEkkDBhJRAwYSVQMGEiAFIAEBEgwEIAEB
+AgMgAAkEIAEBCQkgBAEIDhJBEkUFIAEBEkkEAAASUQQAABJVBQABARJVBAAAEiADAAABAygADgMo
+AAIDKAAJBAgAElEECAASVQQIABIgCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhy
+b3dzAQgBAAIAAAAAACgBACNTQ19lNDIzMjViZDQ1NmM0MTZiOWU2YTk0Y2Y1YzJlYjczMQAABQEA
+AAAAFgEAEUNvcHlyaWdodCBAICAyMDIyAABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcB
+AFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNwQBAAAAtAAAAM7K774B
+AAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lv
+bj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUw
+ODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQ
+tAAAABw3AAAAAAAAAAAAADY3AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoNwAAAAAAAAAAAAAA
+AF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgA
+AABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAA
+AL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAA
+AQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAA
+AAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAA
+MAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5
+AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAA
+UwBDAF8AZQA0ADIAMwAyADUAYgBkADQANQA2AGMANAAxADYAYgA5AGUANgBhADkANABjAGYANQBj
+ADIAZQBiADcAMwAxAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAA
+LgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwBlADQAMgAzADIANQBi
+AGQANAA1ADYAYwA0ADEANgBiADkAZQA2AGEAOQA0AGMAZgA1AGMAMgBlAGIANwAzADEALgBkAGwA
+bAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0
+ACAAQAAgACAAMgAwADIAMgAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAA
+AAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfAGUANAAy
+ADMAMgA1AGIAZAA0ADUANgBjADQAMQA2AGIAOQBlADYAYQA5ADQAYwBmADUAYwAyAGUAYgA3ADMA
+MQAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwBlADQAMgAz
+ADIANQBiAGQANAA1ADYAYwA0ADEANgBiADkAZQA2AGEAOQA0AGMAZgA1AGMAMgBlAGIANwAzADEA
+AAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAI
+AAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAEg3AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_e42325bd456c416b9e6a94cf5c2eb731</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">77</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import doggy data\Validate Data.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import doggy data\Validate Data.Inputs[Input 0].Columns[ContestantName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ContestantName"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[ContestantName]"
+                      usageType="readWrite" />
+                    <inputColumn
+                      refId="Package\Import doggy data\Validate Data.Inputs[Input 0].Columns[SeriesNumber]"
+                      cachedDataType="ui4"
+                      cachedName="SeriesNumber"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[SeriesNumber]" />
+                    <inputColumn
+                      refId="Package\Import doggy data\Validate Data.Inputs[Input 0].Columns[Position]"
+                      cachedDataType="ui4"
+                      cachedName="Position"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[Position]" />
+                    <inputColumn
+                      refId="Package\Import doggy data\Validate Data.Inputs[Input 0].Columns[MentorName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MentorName"
+                      lineageId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output].Columns[MentorName]"
+                      usageType="readWrite" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import doggy data\Validate Data.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Import doggy data\Validate Data.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[intSeries]"
+                      dataType="ui4"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[intSeries]"
+                      name="intSeries" />
+                    <outputColumn
+                      refId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[intPosition]"
+                      dataType="ui4"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[intPosition]"
+                      name="intPosition" />
+                    <outputColumn
+                      refId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[Problem]"
+                      dataType="nText"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[Problem]"
+                      name="Problem" />
+                    <outputColumn
+                      refId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[IfGood]"
+                      dataType="bool"
+                      lineageId="Package\Import doggy data\Validate Data.Outputs[Output 0].Columns[IfGood]"
+                      name="IfGood" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import doggy data.Paths[Bad Output]"
+              endId="Package\Import doggy data\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              name="Bad Output"
+              startId="Package\Import doggy data\Conditional Split.Outputs[Bad Output]" />
+            <path
+              refId="Package\Import doggy data.Paths[Flat File Source Output]"
+              endId="Package\Import doggy data\Validate Data.Inputs[Input 0]"
+              name="Flat File Source Output"
+              startId="Package\Import doggy data\Dodgy Data Read.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Import doggy data.Paths[Good Output]"
+              endId="Package\Import doggy data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Good Output"
+              startId="Package\Import doggy data\Conditional Split.Outputs[Good Output]" />
+            <path
+              refId="Package\Import doggy data.Paths[Output 0]"
+              endId="Package\Import doggy data\Conditional Split.Inputs[Conditional Split Input]"
+              name="Output 0"
+              startId="Package\Import doggy data\Validate Data.Outputs[Output 0]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Old Data Truncate"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{2467C10F-CAAE-4199-BFF9-CB46286B2D8D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Old Data Truncate"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{9BEA2CE6-9D48-45D7-AD5E-BBFA6131D827}"
+          SQLTask:SqlStatementSource="Truncate Table tblBadContestant;&#xA;Truncate Table tblGoodContestant" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{5CFD02D4-820B-4F82-B0AA-157B3AF2E6F4}"
+      DTS:From="Package\Old Data Truncate"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Import doggy data" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="161.6,41.6"
+          Id="Package\Import doggy data"
+          TopLeft="266.666656070286,153.400001219114" />
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\Old Data Truncate"
+          TopLeft="256.66665646765,65.0000005165736" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="338.26665646765,106.600000516574">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.19999960263601,46.8000007025404"
+              Start="0,0"
+              End="9.19999960263601,39.3000007025404">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.4000003512702" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.4000003512702"
+                    Point2="0,23.4000003512702"
+                    Point3="4,23.4000003512702" />
+                  <mssgle:LineSegment
+                    End="5.19999960263601,23.4000003512702" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.19999960263601,23.4000003512702"
+                    Point2="9.19999960263601,23.4000003512702"
+                    Point3="9.19999960263601,27.4000003512702" />
+                  <mssgle:LineSegment
+                    End="9.19999960263601,39.3000007025404" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import doggy data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="140.8,41.6"
+          Id="Package\Import doggy data\Validate Data"
+          TopLeft="479,167" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Import doggy data\OLE DB Destination"
+          TopLeft="308,308" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Import doggy data\Conditional Split"
+          TopLeft="481,229" />
+        <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\Import doggy data\Dodgy Data Read"
+          TopLeft="467,82" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Import doggy data\OLE DB Destination 1"
+          TopLeft="657,316" />
+        <EdgeLayout
+          Id="Package\Import doggy data.Paths[Output 0]"
+          TopLeft="479,187.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="1.99999999999994,62.0000000000001"
+              Start="0,0"
+              End="-5.50000000000006,62.0000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,0"
+                    Point2="-22.5,0"
+                    Point3="-22.5,4" />
+                  <mssgle:LineSegment
+                    End="-22.5,58.0000000000001" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.5,58.0000000000001"
+                    Point2="-22.5,62.0000000000001"
+                    Point3="-18.5,62.0000000000001" />
+                  <mssgle:LineSegment
+                    End="-5.50000000000006,62.0000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import doggy data.Paths[Good Output]"
+          TopLeft="533.533333333333,270.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-139.933333333333,37.3999999999996"
+              Start="0,0"
+              End="-139.933333333333,29.8999999999996">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.1913402061854" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.1913402061854"
+                    Point2="0,15.1913402061854"
+                    Point3="-4,15.1913402061854" />
+                  <mssgle:LineSegment
+                    End="-135.933333333333,15.1913402061854" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-135.933333333333,15.1913402061854"
+                    Point2="-139.933333333333,15.1913402061854"
+                    Point3="-139.933333333333,19.1913402061854" />
+                  <mssgle:LineSegment
+                    End="-139.933333333333,29.8999999999996" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-99.1205729166666,20.1913402061854,58.3078125,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import doggy data.Paths[Flat File Source Output]"
+          TopLeft="548.4,123.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.4"
+              Start="0,0"
+              End="0,35.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import doggy data.Paths[Bad Output]"
+          TopLeft="582.066666666667,270.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="164.933333333333,45.3999999999998"
+              Start="0,0"
+              End="164.933333333333,37.8999999999998">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.4408247422679" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.4408247422679"
+                    Point2="0,18.4408247422679"
+                    Point3="4,18.4408247422679" />
+                  <mssgle:LineSegment
+                    End="160.933333333333,18.4408247422679" />
+                  <mssgle:CubicBezierSegment
+                    Point1="160.933333333333,18.4408247422679"
+                    Point2="164.933333333333,18.4408247422679"
+                    Point3="164.933333333333,22.4408247422679" />
+                  <mssgle:LineSegment
+                    End="164.933333333333,37.8999999999998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="56.7152799479167,23.4408247422679,51.5027734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import doggy data\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import doggy data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-GO18V3M_MSSQLINSTANCE002.Movies"
+  DTS:DTSID="{B90B59EC-62EB-48CB-8644-58818B6EE477}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-GO18V3M\MSSQLINSTANCE002;Initial Catalog=Movies;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-02FlatFiletoDBData-{B90B59EC-62EB-48CB-8644-58818B6EE477}DESKTOP-GO18V3M\MSSQLINSTANCE002.Movies;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

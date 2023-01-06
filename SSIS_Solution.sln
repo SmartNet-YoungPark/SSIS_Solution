@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "01DBDatatoExcel", "01SSIS\01DBDatatoExcel.dtproj", "{834DB27D-B0CB-43C3-A102-276E3DDEBD18}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "02FlatFiletoDBData", "FlatFiletoDBData\02FlatFiletoDBData.dtproj", "{43F20A34-91E7-4AA6-B827-C058B9C6CC2F}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "03-1Basic Transformation(aggregation)", "03-1Basic Transformation(aggregation)\03-1Basic Transformation(aggregation).dtproj", "{051578A2-4C90-4790-AEFC-51E8639DC104}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "04Variables and Script Csharp", "04Variables\04Variables and Script Csharp.dtproj", "{601DD539-A3A8-4357-AB20-52E72D2D97AC}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "05Lookup and Table Comparison", "05DataConverion\05Lookup and Table Comparison.dtproj", "{D715C445-93DC-4521-BB47-59D121410971}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "03Basic Sort Transformations 05Data conversion", "03Basic Sort Transformations 05Data conversion\03Basic Sort Transformations 05Data conversion.dtproj", "{99E0B9D6-42CA-40AE-B7D0-5694C4DA5460}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "06Expressions", "06Expressions\06Expressions.dtproj", "{086CBFAC-C3F3-4B30-AF79-484818C8F1BE}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "07Conditional Sprit and derived column transforms", "07Conditional Sprit and derived column transforms\07Conditional Sprit and derived column transforms.dtproj", "{08C179A6-9013-4B78-89EE-093682F72D88}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "10 Sequence Containers and for Loops", "09Lookup Transformation\10 Sequence Containers and for Loops.dtproj", "{604B8A61-9129-421E-9F5D-E3C90D295FEF}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "10Seuence and Loop Container", "10Seuence and Loop Container\10Seuence and Loop Container.dtproj", "{20343F82-0389-474D-AC8F-9027AD5C8DA0}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "11Looping Over files", "11Looping Over files\11Looping Over files.dtproj", "{2B826BBB-865B-491C-828E-FF50F0D6ACA3}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "12ForeachLoop", "12ForeachLoop\12ForeachLoop.dtproj", "{4468DD77-7D91-447A-AC86-A9068C847FDC}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "13Script Tasking", "13Script Tasking\13Script Tasking.dtproj", "{172EAE10-FA43-4018-BBE7-ECA5F1157C71}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "15ScriptComponent", "15ScriptComponent\15ScriptComponent.dtproj", "{1BC7EC0E-2079-4259-B0CC-92E9D6044236}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "16Expresssion and Constraints", "16Expresssion and Constraints\16Expresssion and Constraints.dtproj", "{51FC16A1-45EC-4021-972D-3D838B53D142}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "08ScriptTask Database Backup", "08ScriptTask Database Backup\08ScriptTask Database Backup.dtproj", "{916AB95C-2238-4DF6-AA88-85F1821509E7}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "17EventLog and Audit", "17EventLog and Audit\17EventLog and Audit.dtproj", "{79E84340-180A-4006-B67F-C3827E0C210E}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "18Error Handling Output", "18Error Handling Output\18Error Handling Output.dtproj", "{3114D314-A3EC-49B4-B80D-47D632573DB4}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "19Paramters and Deployment", "19Paramters and Deployment\19Paramters and Deployment.dtproj", "{3A720901-CE08-43D7-A419-CD285414B1FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{834DB27D-B0CB-43C3-A102-276E3DDEBD18}.Development|Default.ActiveCfg = Development
+		{834DB27D-B0CB-43C3-A102-276E3DDEBD18}.Development|Default.Build.0 = Development
+		{43F20A34-91E7-4AA6-B827-C058B9C6CC2F}.Development|Default.ActiveCfg = Development
+		{43F20A34-91E7-4AA6-B827-C058B9C6CC2F}.Development|Default.Build.0 = Development
+		{051578A2-4C90-4790-AEFC-51E8639DC104}.Development|Default.ActiveCfg = Development
+		{051578A2-4C90-4790-AEFC-51E8639DC104}.Development|Default.Build.0 = Development
+		{601DD539-A3A8-4357-AB20-52E72D2D97AC}.Development|Default.ActiveCfg = Development
+		{601DD539-A3A8-4357-AB20-52E72D2D97AC}.Development|Default.Build.0 = Development
+		{D715C445-93DC-4521-BB47-59D121410971}.Development|Default.ActiveCfg = Development
+		{D715C445-93DC-4521-BB47-59D121410971}.Development|Default.Build.0 = Development
+		{99E0B9D6-42CA-40AE-B7D0-5694C4DA5460}.Development|Default.ActiveCfg = Development
+		{99E0B9D6-42CA-40AE-B7D0-5694C4DA5460}.Development|Default.Build.0 = Development
+		{086CBFAC-C3F3-4B30-AF79-484818C8F1BE}.Development|Default.ActiveCfg = Development
+		{086CBFAC-C3F3-4B30-AF79-484818C8F1BE}.Development|Default.Build.0 = Development
+		{08C179A6-9013-4B78-89EE-093682F72D88}.Development|Default.ActiveCfg = Development
+		{08C179A6-9013-4B78-89EE-093682F72D88}.Development|Default.Build.0 = Development
+		{604B8A61-9129-421E-9F5D-E3C90D295FEF}.Development|Default.ActiveCfg = Development
+		{604B8A61-9129-421E-9F5D-E3C90D295FEF}.Development|Default.Build.0 = Development
+		{20343F82-0389-474D-AC8F-9027AD5C8DA0}.Development|Default.ActiveCfg = Development
+		{20343F82-0389-474D-AC8F-9027AD5C8DA0}.Development|Default.Build.0 = Development
+		{2B826BBB-865B-491C-828E-FF50F0D6ACA3}.Development|Default.ActiveCfg = Development
+		{2B826BBB-865B-491C-828E-FF50F0D6ACA3}.Development|Default.Build.0 = Development
+		{4468DD77-7D91-447A-AC86-A9068C847FDC}.Development|Default.ActiveCfg = Development
+		{4468DD77-7D91-447A-AC86-A9068C847FDC}.Development|Default.Build.0 = Development
+		{172EAE10-FA43-4018-BBE7-ECA5F1157C71}.Development|Default.ActiveCfg = Development
+		{172EAE10-FA43-4018-BBE7-ECA5F1157C71}.Development|Default.Build.0 = Development
+		{1BC7EC0E-2079-4259-B0CC-92E9D6044236}.Development|Default.ActiveCfg = Development
+		{1BC7EC0E-2079-4259-B0CC-92E9D6044236}.Development|Default.Build.0 = Development
+		{51FC16A1-45EC-4021-972D-3D838B53D142}.Development|Default.ActiveCfg = Development
+		{51FC16A1-45EC-4021-972D-3D838B53D142}.Development|Default.Build.0 = Development
+		{916AB95C-2238-4DF6-AA88-85F1821509E7}.Development|Default.ActiveCfg = Development
+		{916AB95C-2238-4DF6-AA88-85F1821509E7}.Development|Default.Build.0 = Development
+		{79E84340-180A-4006-B67F-C3827E0C210E}.Development|Default.ActiveCfg = Development
+		{79E84340-180A-4006-B67F-C3827E0C210E}.Development|Default.Build.0 = Development
+		{3114D314-A3EC-49B4-B80D-47D632573DB4}.Development|Default.ActiveCfg = Development
+		{3114D314-A3EC-49B4-B80D-47D632573DB4}.Development|Default.Build.0 = Development
+		{3A720901-CE08-43D7-A419-CD285414B1FC}.Development|Default.ActiveCfg = Development
+		{3A720901-CE08-43D7-A419-CD285414B1FC}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD0A3B59-C354-4B75-BFE7-CC1E8426F303}
+	EndGlobalSection
+EndGlobal
